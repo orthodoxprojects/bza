@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byzantine Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/style.js" defer></script>
+	<script src="js/functionality.js" defer></script>
+	<script src="js/scales.js" defer></script>
+	<script src="js/audiocontext.js" defer></script>
+</head>
+<body>
+	<div class="grid1s">
+		<div class="itemS">
+			<button id="scales" class="btnGreen">Diatonic Scale</button>
+			<ul id="scl" class="sc">
+				<li id="diatonicScale">Diatonic Scale</li>
+				<li id="softChromaticScale">Soft Chromatic Scale</li>
+				<li id="hardChromaticScale">Hard Chromatic Scale</li>
+				<li id="enharmonicScale">Enharmonic Scale</li>
+				<li id="legetosScale">Legetos Scale</li>
+				<li id="zygosScale">Zygos Scale</li>
+				<li id="zygosLegetosScale">Zygos Legetos Scale</li>
+				<li id="klitonScale">Kliton Scale</li>
+				<li id="spathiKeScale">Spathi Ke Scale</li>
+				<li id="spathiGaScale">Spathi Ga Scale</li>
+			</ul>
+		</div>
+	</div>
+	<div class="grid4s">
+		<div class="itemS">
+			<button id="dts" value="diatonicScale" class="btnYellow"><img src="img/dt.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="scs" class="btnOrange"><img src="img/sc.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="hcs" class="btnOrange"><img src="img/hc.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="ens" class="btnOrange"><img src="img/en.svg" class="svgS"></button>
+		</div>
+	</div>
+	<div class="grid7s">
+		<div class="itemS">
+			<button id="minus" class="btnPurple"><img src="img/minus.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<input type="text" id="pitch" class="inputGreen" value="0" readonly>
+		</div>
+		<div class="itemS">
+			<button id="plus" class="btnPurple"><img src="img/plus.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="diesis2" value="0" class="btnBlue"><img src="img/diesis2.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="diesis4" value="0" class="btnBlue"><img src="img/diesis4.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="diesis6" class="btnBlue"><img src="img/diesis6.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="diesis8" class="btnBlue"><img src="img/diesis8.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="volLow" class="btnPurple"><img src="img/volLow.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<input type="text" id="vol" class="inputGreen" value="0.8" readonly>
+		</div>
+		<div class="itemS">
+			<button id="volHigh" class="btnPurple"><img src="img/volHigh.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="yfesis2" value="off" class="btnBlue"><img src="img/yfesis2.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="yfesis4" class="btnBlue"><img src="img/yfesis4.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="yfesis6" class="btnBlue"><img src="img/yfesis6.svg" class="svgS"></button>
+		</div>
+		<div class="itemS">
+			<button id="yfesis8" class="btnBlue"><img src="img/yfesis8.svg" class="svgS"></button>
+		</div>
+	</div>
+	<div class="grid4l">
+		<div class="itemL">
+			<button id="gaHigh" value="off" class="btnOrange"><img src="img/gaHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="thiHigh" value="off" class="btnOrange"><img src="img/thiHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="keHigh" value="off" class="btnOrange"><img src="img/keHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="switch" value="196" class="btnOrange"><img src="img/switch.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="vouHigh" value="off" class="btnOrange"><img src="img/vouHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="paHigh" value="off" class="btnOrange"><img src="img/paHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="niHigh" value="off" class="btnOrange"><img src="img/niHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="zoHigh" value="off" class="btnOrange"><img src="img/zoHigh.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="vou" value="off" class="btnOrange"><img src="img/vou.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="ga" value="off" class="btnOrange"><img src="img/ga.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="thi" value="off" class="btnOrange"><img src="img/thi.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="ke" value="off" class="btnOrange"><img src="img/ke.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="pa" value="off" class="btnOrange"><img src="img/pa.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="ni" value="off" class="btnOrange"><img src="img/ni.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="zo" value="off" class="btnOrange"><img src="img/zo.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="keLow" value="off" class="btnOrange"><img src="img/keLow.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="stop" value="0" class="btnRed" disabled><img src="img/stop.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="vouLow" value="off" class="btnOrange"><img src="img/vouLow.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="gaLow" value="off" class="btnOrange"><img src="img/gaLow.svg" class="svgL"></button>
+		</div>
+		<div class="itemL">
+			<button id="thiLow" value="off" class="btnOrange"><img src="img/thiLow.svg" class="svgL"></button>
+		</div>
+	</div>
+	<div class="grid1s">
+		<div class="itemS">
+			<div class="footerGreen"><p>BZA v0.9.4-alpha |&nbsp;</p><p id="freq">0</p><p>&nbsp;Hz</p></div>
+		</div>
+	</div>
+</body>
+</html>
