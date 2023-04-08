@@ -54,128 +54,1132 @@ scalesBtn.onclick = () => {
 }
 
 diatonicScaleBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     dts();
     dtBtn.value = "diatonicScale";
     document.getElementById("scl").classList.toggle("show");
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 softChromaticScaleBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     scs();
     dtBtn.value = "softChromaticScale";
     document.getElementById("scl").classList.toggle("show");
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 hardChromaticScaleBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     hcs();
     dtBtn.value = "hardChromaticScale";
     document.getElementById("scl").classList.toggle("show");
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 enharmonicScaleBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     ens();
     dtBtn.value = "enharmonicScale";
     document.getElementById("scl").classList.toggle("show");
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 legetosScaleBtn.onclick = () => {
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
-    stopOff();
 }
 
 zygosScaleBtn.onclick = () => {
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
-    stopOff();
 }
 
 zygosLegetosScaleBtn.onclick = () => {
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
-    stopOff();
 }
 
 klitonScaleBtn.onclick = () => {
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
-    stopOff();
 }
 
 spathiKeScaleBtn.onclick = () => {
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
-    stopOff();
 }
 
 spathiGaScaleBtn.onclick = () => {
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
-    stopOff();
 }
 
 dtBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     dts();
     dtBtn.value = "diatonicScale";
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 scBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     scs();
     dtBtn.value = "softChromaticScale";
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 hcBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     hcs();
     dtBtn.value = "hardChromaticScale";
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 enBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     ens();
     dtBtn.value = "enharmonicScale";
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 diesis2Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         diesis2();
         diesis2Btn.value = "2";
@@ -191,13 +1195,85 @@ diesis2Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 diesis4Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         diesis4();
         diesis2Btn.value = "4";
@@ -213,13 +1289,85 @@ diesis4Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 diesis6Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         diesis6();
         diesis2Btn.value = "6";
@@ -235,13 +1383,85 @@ diesis6Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 diesis8Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         diesis8();
         diesis2Btn.value = "8";
@@ -257,13 +1477,85 @@ diesis8Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 yfesis2Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         yfesis2();
         diesis2Btn.value = "-2";
@@ -279,13 +1571,85 @@ yfesis2Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 yfesis4Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         yfesis4();
         diesis2Btn.value = "-4";
@@ -301,13 +1665,85 @@ yfesis4Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 yfesis6Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         yfesis6();
         diesis2Btn.value = "-6";
@@ -323,13 +1759,85 @@ yfesis6Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 yfesis8Btn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(yfesis2Btn.value=="off") {
         yfesis8();
         diesis2Btn.value = "-8";
@@ -345,13 +1853,85 @@ yfesis8Btn.onclick = () => {
             yfesis2Btn.value = "on";
         }
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 switchBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(switchBtn.value=="196") {
         switchOn();
         switchBtn.value = "392";
@@ -359,13 +1939,85 @@ switchBtn.onclick = () => {
         switchOff();
         switchBtn.value = "196";
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 minusBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(pitchBtn.value > -35) {
         plusBtn.removeAttribute("disabled");
         minusOn();
@@ -378,13 +2030,85 @@ minusBtn.onclick = () => {
         pitchBtn.value = "-36";
         minusBtn.setAttribute("disabled", "disabled");
     }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 plusBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     if(pitchBtn.value < 35) {
         minusBtn.removeAttribute("disabled");
         plusOn();
@@ -396,6 +2120,82 @@ plusBtn.onclick = () => {
         minusOn();
         pitchBtn.value = "36";
         plusBtn.setAttribute("disabled", "disabled");
+    }
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
     }
 }
 
@@ -430,15 +2230,87 @@ volHighBtn.onclick = () => {
 }
 
 pitchBtn.onclick = () => {
-    if (audioCtx && audioCtx.state === "running") {
-        audioCtx.close();
-    }
-    stopOff();
     minusBtn.removeAttribute("disabled");
     plusBtn.removeAttribute("disabled");
     minusOn();
     plusOn();
     pitchBtn.value = "0";
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
 }
 
 volBtn.onclick = () => {
