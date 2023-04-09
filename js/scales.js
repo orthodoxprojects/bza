@@ -214,342 +214,432 @@ const enharmonicGaVouLowMoria = enharmonicGaThiMoria + enharmonicGaGa + enharmon
 
 function keHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicKeHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticKeHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticKeHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoKeHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaKeHighMoria / 72);
     }
 }
 
 function thiHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicThiHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticThiHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticThiHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoThiHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaThiHighMoria / 72);
     }
 }
 
 function gaHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicGaHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticGaHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticGaHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoGaHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaGaHighMoria / 72);
     }
 }
 
 function vouHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicVouHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticVouHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticVouHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoVouHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaVouHighMoria / 72);
     }
 }
 
 function paHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicPaHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticPaHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticPaHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoPaHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaPaHighMoria / 72);
     }
 }
 
 function niHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicNiHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticNiHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticNiHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoNiHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaNiHighMoria / 72);
     }
 }
 
 function zoHighNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicZoHighMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticZoHighMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticZoHighMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoZoHighMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaZoHighMoria / 72);
     }
 }
 
 function keNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicKeMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticKeMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticKeMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoKeMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaKeMoria / 72);
     }
 }
 
 function thiNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, diatonicThiMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, softChromaticThiMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, hardChromaticThiMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicZoThiMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, enharmonicGaThiMoria / 72);
     }
 }
 
 function gaNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicGaMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticGaMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticGaMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoGaMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaGaMoria / 72);
     }
 }
 
 function vouNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicVouMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticVouMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticVouMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoVouMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaVouMoria / 72);
     }
 }
 
 function paNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicPaMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticPaMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticPaMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoPaMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaPaMoria / 72);
     }
 }
 
 function niNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicNiMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticNiMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticNiMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoNiMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaNiMoria / 72);
     }
 }
 
 function zoNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicZoMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticZoMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticZoMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoZoMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaZoMoria / 72);
     }
 }
 
 function keLowNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicKeLowMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticKeLowMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticKeLowMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoKeLowMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaKeLowMoria / 72);
     }
 }
 
 function thiLowNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicThiLowMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticThiLowMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticThiLowMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoThiLowMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaThiLowMoria / 72);
     }
 }
 
 function gaLowNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicGaLowMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticGaLowMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticGaLowMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoGaLowMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaGaLowMoria / 72);
     }
 }
 
 function vouLowNote() {
     if(dtBtn.value=="diatonicScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -diatonicVouLowMoria / 72);
     } else if(dtBtn.value=="softChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -softChromaticVouLowMoria / 72);
     } else if(dtBtn.value=="hardChromaticScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -hardChromaticVouLowMoria / 72);
     } else if(dtBtn.value=="enharmonicZoScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicZoVouLowMoria / 72);
     } else if(dtBtn.value=="enharmonicGaScale") {
-        diesis4Btn.value = Number(switchBtn.value) + Number(pitchBtn.value) + Number(diesis2Btn.value);
+        let baseFrequency = Number(pitchBtn.value) + Number(diesis2Btn.value);
+        diesis4Btn.value = switchBtn.value * Math.pow(2, baseFrequency / 72);
         stopBtn.value = diesis4Btn.value * Math.pow(2, -enharmonicGaVouLowMoria / 72);
     }
 }
