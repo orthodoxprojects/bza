@@ -1,5 +1,15 @@
+function scNo() {
+    document.getElementById("dts").style.background = "#de935f";
+    document.getElementById("dts").style.borderColor = "#de935f #de935f #91603e #de935f";
+    document.getElementById("scs").style.background = "#de935f";
+    document.getElementById("scs").style.borderColor = "#de935f #de935f #91603e #de935f";
+    document.getElementById("hcs").style.background = "#de935f";
+    document.getElementById("hcs").style.borderColor = "#de935f #de935f #91603e #de935f";
+    document.getElementById("ens").style.background = "#de935f";
+    document.getElementById("ens").style.borderColor = "#de935f #de935f #91603e #de935f";
+}
+
 function dts() {
-    document.getElementById("scales").innerHTML="Diatonic Scale";
     document.getElementById("dts").style.background = "#f0c674";
     document.getElementById("dts").style.borderColor = "#f0c674 #f0c674 #a3874f #f0c674";
     document.getElementById("scs").style.background = "#de935f";
@@ -11,7 +21,6 @@ function dts() {
 }
 
 function scs() {
-    document.getElementById("scales").innerHTML="Soft Chromatic Scale";
     document.getElementById("dts").style.background = "#de935f";
     document.getElementById("dts").style.borderColor = "#de935f #de935f #91603e #de935f";
     document.getElementById("scs").style.background = "#f0c674";
@@ -23,7 +32,6 @@ function scs() {
 }
 
 function hcs() {
-    document.getElementById("scales").innerHTML="Hard Chromatic Scale";
     document.getElementById("dts").style.background = "#de935f";
     document.getElementById("dts").style.borderColor = "#de935f #de935f #91603e #de935f";
     document.getElementById("scs").style.background = "#de935f";
@@ -35,7 +43,6 @@ function hcs() {
 }
 
 function ens() {
-    document.getElementById("scales").innerHTML="Enharmonic Scale";
     document.getElementById("dts").style.background = "#de935f";
     document.getElementById("dts").style.borderColor = "#de935f #de935f #91603e #de935f";
     document.getElementById("scs").style.background = "#de935f";

@@ -2,7 +2,8 @@ const scalesBtn = document.getElementById("scales");
 const diatonicScaleBtn = document.getElementById("diatonicScale");
 const softChromaticScaleBtn = document.getElementById("softChromaticScale");
 const hardChromaticScaleBtn = document.getElementById("hardChromaticScale");
-const enharmonicScaleBtn = document.getElementById("enharmonicScale");
+const enharmonicZoScaleBtn = document.getElementById("enharmonicZoScale");
+const enharmonicGaScaleBtn = document.getElementById("enharmonicGaScale");
 const legetosScaleBtn = document.getElementById("legetosScale");
 const zygosScaleBtn = document.getElementById("zygosScale");
 const zygosLegetosScaleBtn = document.getElementById("zygosLegetosScale");
@@ -55,6 +56,7 @@ scalesBtn.onclick = () => {
 
 diatonicScaleBtn.onclick = () => {
     dts();
+    scalesBtn.innerHTML="Diatonic Scale";
     dtBtn.value = "diatonicScale";
     document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
@@ -137,6 +139,7 @@ diatonicScaleBtn.onclick = () => {
 
 softChromaticScaleBtn.onclick = () => {
     scs();
+    scalesBtn.innerHTML="Soft Chromatic Scale";
     dtBtn.value = "softChromaticScale";
     document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
@@ -219,6 +222,7 @@ softChromaticScaleBtn.onclick = () => {
 
 hardChromaticScaleBtn.onclick = () => {
     hcs();
+    scalesBtn.innerHTML="Hard Chromatic Scale";
     dtBtn.value = "hardChromaticScale";
     document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
@@ -299,9 +303,93 @@ hardChromaticScaleBtn.onclick = () => {
     }
 }
 
-enharmonicScaleBtn.onclick = () => {
+enharmonicZoScaleBtn.onclick = () => {
     ens();
-    dtBtn.value = "enharmonicScale";
+    scalesBtn.innerHTML="Enharmonic Zo Scale";
+    dtBtn.value = "enharmonicZoScale";
+    document.getElementById("scl").classList.toggle("show");
+    if (audioCtx && audioCtx.state === "running") {
+        audioCtx.close();
+        if(keHighBtn.value=="on") {
+            keHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiHighBtn.value=="on") {
+            thiHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaHighBtn.value=="on") {
+            gaHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouHighBtn.value=="on") {
+            vouHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paHighBtn.value=="on") {
+            paHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niHighBtn.value=="on") {
+            niHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoHighBtn.value=="on") {
+            zoHighNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keBtn.value=="on") {
+            keNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiBtn.value=="on") {
+            thiNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaBtn.value=="on") {
+            gaNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouBtn.value=="on") {
+            vouNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(paBtn.value=="on") {
+            paNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(niBtn.value=="on") {
+            niNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(zoBtn.value=="on") {
+            zoNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(keLowBtn.value=="on") {
+            keLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(thiLowBtn.value=="on") {
+            thiLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(gaLowBtn.value=="on") {
+            gaLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        } else if(vouLowBtn.value=="on") {
+            vouLowNote();
+            init();
+            footerBtn.innerHTML = Number(stopBtn.value).toFixed(1);
+        }
+    }
+}
+
+enharmonicGaScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Enharmonic Ga Scale";
+    dtBtn.value = "enharmonicGaScale";
     document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
@@ -857,6 +945,7 @@ spathiGaScaleBtn.onclick = () => {
 
 dtBtn.onclick = () => {
     dts();
+    scalesBtn.innerHTML="Diatonic Scale";
     dtBtn.value = "diatonicScale";
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
@@ -938,6 +1027,7 @@ dtBtn.onclick = () => {
 
 scBtn.onclick = () => {
     scs();
+    scalesBtn.innerHTML="Soft Chromatic Scale";
     dtBtn.value = "softChromaticScale";
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
@@ -1019,6 +1109,7 @@ scBtn.onclick = () => {
 
 hcBtn.onclick = () => {
     hcs();
+    scalesBtn.innerHTML="Hard Chromatic Scale";
     dtBtn.value = "hardChromaticScale";
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
@@ -1100,7 +1191,8 @@ hcBtn.onclick = () => {
 
 enBtn.onclick = () => {
     ens();
-    dtBtn.value = "enharmonicScale";
+    scalesBtn.innerHTML="Enharmonic Zo Scale";
+    dtBtn.value = "enharmonicZoScale";
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
