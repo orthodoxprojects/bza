@@ -26,8 +26,6 @@
 
 ### To-Do List
 
-* to add functionality to all the **Scales**
-
 * to build desktop application for Linux, macOS and  Windows
 
 * to build mobile application for Android
