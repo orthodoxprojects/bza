@@ -470,6 +470,10 @@ enharmonicGaScaleBtn.onclick = () => {
 }
 
 legetosScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Legetos Scale";
+    dtBtn.value = "legetosScale";
+    document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
@@ -549,6 +553,10 @@ legetosScaleBtn.onclick = () => {
 }
 
 zygosScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Zygos Scale";
+    dtBtn.value = "zygosScale";
+    document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
@@ -628,6 +636,10 @@ zygosScaleBtn.onclick = () => {
 }
 
 zygosLegetosScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Zygos Legetos Scale";
+    dtBtn.value = "zygosLegetosScale";
+    document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
@@ -707,6 +719,10 @@ zygosLegetosScaleBtn.onclick = () => {
 }
 
 klitonScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Kliton Scale";
+    dtBtn.value = "klitonScale";
+    document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
@@ -786,6 +802,10 @@ klitonScaleBtn.onclick = () => {
 }
 
 spathiKeScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Spathi Ke Scale";
+    dtBtn.value = "spathiKeScale";
+    document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
@@ -865,6 +885,10 @@ spathiKeScaleBtn.onclick = () => {
 }
 
 spathiGaScaleBtn.onclick = () => {
+    scNo();
+    scalesBtn.innerHTML="Spathi Ga Scale";
+    dtBtn.value = "spathiGaScale";
+    document.getElementById("scl").classList.toggle("show");
     if (audioCtx && audioCtx.state === "running") {
         audioCtx.close();
         if(keHighBtn.value=="on") {
