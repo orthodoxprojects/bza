@@ -6,7 +6,7 @@
 
 ### Features
 
-* plays the **notes** for all the **Scales** from [neanes](https://github.com/danielgarthur/neanes) - not finished yet
+* plays the **notes** for all the **Scales** available in [neanes](https://github.com/danielgarthur/neanes)
 
 * also plays the **notes** with alteration
 
