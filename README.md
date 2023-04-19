@@ -42,4 +42,4 @@ Thank you for your work on this font and on your application in general, without
 
 #### A web version of the app can be found [here](https://efraimkaov.github.io/bza/)
 
-Unfortunately, the update for the web version may take a few minutes to take effect, maybe up to an hour from the last commit.
+Unfortunately, sometimes the update for the web version may take a few minutes to take effect, maybe up to an hour from the last commit.
