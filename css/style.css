@@ -6,7 +6,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 1vw;
+  width: 1dvw;
 }
 
 ::-webkit-scrollbar-track {
@@ -31,7 +31,7 @@ ul {
 li {
   background-color: #6b703e;
   color: #b5bd68;
-  padding: 1vh;
+  padding: 1dvh;
 }
 
 li:hover {
@@ -42,32 +42,32 @@ li:hover {
 body {
   background-color: #1d1f21;
   color: #1d1f21;
-  width: 100vw;
-  height: 100vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  width: 100dvw;
+  height: 100dvh;
+  padding-left: 2dvw;
+  padding-right: 2dvw;
+  padding-top: 1dvh;
+  padding-bottom: 1dvh;
 }
 
 .sc {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 2vw;
-  top: 7.1vh;
-  width: 96vw;
-  height: 22.5vh;
-  max-height: 22.5vh;
+  left: 2dvw;
+  top: 7.1dvh;
+  width: 96dvw;
+  height: 22.5dvh;
+  max-height: 22.5dvh;
   overflow: auto;
   background-color: #6b703e;
-  border: 0.5vh solid #b5bd68;
-  border-radius: 1vh;
+  border: 0.5dvh solid #b5bd68;
+  border-radius: 1dvh;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   font-weight: bold;
   text-align: center;
-  padding: 1vh;
+  padding: 1dvh;
 }
 
 .show {
@@ -76,8 +76,8 @@ body {
 
 .btnRed {
   background-color: #804040;
-  border: 0.5vh solid #804040;
-  border-radius: 1vh;
+  border: 0.5dvh solid #804040;
+  border-radius: 1dvh;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -85,11 +85,11 @@ body {
 
 .btnOrange {
   background-color: #de935f;
-  border-top: 0.5vh solid #de935f;
-  border-right: 0.5vh solid #de935f;
-  border-bottom: 0.5vh solid #91603e;
-  border-left: 0.5vh solid #de935f;
-  border-radius: 1vh;
+  border-top: 0.5dvh solid #de935f;
+  border-right: 0.5dvh solid #de935f;
+  border-bottom: 0.5dvh solid #91603e;
+  border-left: 0.5dvh solid #de935f;
+  border-radius: 1dvh;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -97,11 +97,11 @@ body {
 
 .btnYellow {
   background-color: #f0c674;
-  border-top: 0.5vh solid #f0c674;
-  border-right: 0.5vh solid #f0c674;
-  border-bottom: 0.5vh solid #a3874f;
-  border-left: 0.5vh solid #f0c674;
-  border-radius: 1vh;
+  border-top: 0.5dvh solid #f0c674;
+  border-right: 0.5dvh solid #f0c674;
+  border-bottom: 0.5dvh solid #a3874f;
+  border-left: 0.5dvh solid #f0c674;
+  border-radius: 1dvh;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -109,11 +109,11 @@ body {
 
 .btnBlue {
   background-color: #81a2be;
-  border-top: 0.5vh solid #81a2be;
-  border-right: 0.5vh solid #81a2be;
-  border-bottom: 0.5vh solid #4e6273;
-  border-left: 0.5vh solid #81a2be;
-  border-radius: 1vh;
+  border-top: 0.5dvh solid #81a2be;
+  border-right: 0.5dvh solid #81a2be;
+  border-bottom: 0.5dvh solid #4e6273;
+  border-left: 0.5dvh solid #81a2be;
+  border-radius: 1dvh;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -121,11 +121,11 @@ body {
 
 .btnPurple {
   background-color: #b294bb;
-  border-top: 0.5vh solid #b294bb;
-  border-right: 0.5vh solid #b294bb;
-  border-bottom: 0.5vh solid #68576e;
-  border-left: 0.5vh solid #b294bb;
-  border-radius: 1vh;
+  border-top: 0.5dvh solid #b294bb;
+  border-right: 0.5dvh solid #b294bb;
+  border-bottom: 0.5dvh solid #68576e;
+  border-left: 0.5dvh solid #b294bb;
+  border-radius: 1dvh;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -134,14 +134,14 @@ body {
 .btnGreen {
   background-color: #6b703e;
   color: #b5bd68;
-  border: 0.5vh solid #b5bd68;
-  border-radius: 1vh;
+  border: 0.5dvh solid #b5bd68;
+  border-radius: 1dvh;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   font-weight: bold;
   text-align: center;
-  height: 5.2vh;
+  height: 5.2dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,14 +152,14 @@ body {
 .inputGreen {
   background-color: #6b703e;
   color: #b5bd68;
-  border: 0.5vh solid #b5bd68;
-  border-radius: 1vh;
+  border: 0.5dvh solid #b5bd68;
+  border-radius: 1dvh;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   font-weight: bold;
   text-align: center;
-  height: 5.2vh;
+  height: 5.2dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,67 +170,67 @@ body {
 .footerGreen {
   background-color: #6b703e;
   color: #b5bd68;
-  border: 0.5vh solid #b5bd68;
-  border-radius: 1vh;
+  border: 0.5dvh solid #b5bd68;
+  border-radius: 1dvh;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   font-weight: normal;
   text-align: left;
-  height: 5.2vh;
+  height: 5.2dvh;
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 2vw;
+  padding-left: 2dvw;
 }
 
 .grid1s {
   display: inline-grid;
-  grid-template-columns: 96vw;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  grid-template-columns: 96dvw;
+  column-gap: 2dvw;
+  row-gap: 2dvh;
   justify-content: center;
   align-items: center;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
 }
 
 .grid4s {
   display: inline-grid;
-  grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  grid-template-columns: 22.5dvw 22.5dvw 22.5dvw 22.5dvw;
+  column-gap: 2dvw;
+  row-gap: 2dvh;
   justify-content: center;
   align-items: center;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
 }
 
 .grid4l {
   display: inline-grid;
-  grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  grid-template-columns: 22.5dvw 22.5dvw 22.5dvw 22.5dvw;
+  column-gap: 2dvw;
+  row-gap: 2dvh;
   justify-content: center;
   align-items: center;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
 }
 
 .grid7s {
   display: inline-grid;
-  grid-template-columns: 11vw 21vw 11vw 10.25vw 10.25vw 10.25vw 10.25vw;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  grid-template-columns: 11dvw 21dvw 11dvw 10.25dvw 10.25dvw 10.25dvw 10.25dvw;
+  column-gap: 2dvw;
+  row-gap: 2dvh;
   justify-content: center;
   align-items: center;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
 }
 
 .itemS {
   text-align: center;
-  height: 5.2vh;
+  height: 5.2dvh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -239,7 +239,7 @@ body {
 
 .itemL {
   text-align: center;
-  height: 10.4vh;
+  height: 10.4dvh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -247,13 +247,13 @@ body {
 }
 
 .svgS {
-  max-height: 4vh;
-  height: 3.2vh;
+  max-height: 4dvh;
+  height: 3.2dvh;
   width: auto;
 }
 
 .svgL {
-  max-height: 6vh;
-  height: 6vh;
+  max-height: 6dvh;
+  height: 6dvh;
   width: auto;
 }
