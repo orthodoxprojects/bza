@@ -6,7 +6,7 @@
 
 ### Features
 
-* plays the **notes** for all the **Scales** available in [neanes](https://github.com/danielgarthur/neanes)
+* plays the **notes** for all the **Scales** available in [neanes](https://github.com/neanes/neanes)
 
 * also plays the **notes** with alteration
 
@@ -22,7 +22,7 @@
 
 ### Purpose
 
-* to be compatible with [neanes](https://github.com/danielgarthur/neanes)
+* to be compatible with [neanes](https://github.com/neanes/neanes)
 
 ### To-Do List
 
@@ -32,12 +32,12 @@
 
 ### Acknowledgements
 
-This software uses some characters from **Neanes.otf** font and the **Scales** names and intervals from [neanes](https://github.com/danielgarthur/neanes)
+This software uses some characters from **Neanes.otf** font and the **Scales** names and intervals from [neanes](https://github.com/neanes/neanes)
 
 Thank you for your work on this font and on your application in general, without which this program would not be possible.
 
 #### If you find a bug please open a new issue and send a Bug report.
 
-#### A web version of the app can be found [here](https://efraimkaov.github.io/bza/)
+#### A web version of the app can be found [here](https://kolitsoy.github.io/bza/)
 
 Unfortunately, sometimes the update for the web version may take a few minutes to take effect from to the last commit.
