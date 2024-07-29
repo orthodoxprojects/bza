@@ -38,6 +38,6 @@ Thank you for your work on this font and on your application in general, without
 
 #### If you find a bug please open a new issue and send a Bug report.
 
-#### A web version of the app can be found [here](https://kolitsoy.github.io/bza/)
+#### A web version of the app can be found [here](https://orthodoxprojects.github.io/bza/)
 
 Unfortunately, sometimes the update for the web version may take a few minutes to take effect from to the last commit.
