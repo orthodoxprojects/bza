@@ -1,43 +1,45 @@
 # Byzantine Assistant
 
-### BZA is an assistant that intends to help you get the correct pitch for any note of Byzantine chant, but it can also be used for isokratima.
+## Overview
+
+BZA is an assistant that intends to help you get the correct pitch for any note of Byzantine chant, but it can also be used for isokratima.
 
 ![bza](https://user-images.githubusercontent.com/63643635/230186721-5948cf6c-4aed-4fe3-9682-247d33f97d67.png)
 
-### Features
+## Features
 
-* plays the **notes** for all the **Scales** available in [neanes](https://github.com/neanes/neanes)
+- plays the **notes** for all the **Scales** available in [neanes](https://github.com/neanes/neanes)
+- also plays the **notes** with alteration
+- quick switch between four main **Scales**
+- possibility to adjust the reference frequency
+- quick switch between an octave higher and lower
+- possibility to adjust the volume
+- responsive design
 
-* also plays the **notes** with alteration
+## To-Do List
 
-* quick switch between four main **Scales**
+- to build desktop application for Linux, macOS and  Windows
+- to build mobile application for Android
 
-* possibility to adjust the reference frequency
+## Web Version
 
-* quick switch between an octave higher and lower
+Access the web version of the application [here](https://orthodoxprojects.github.io/bza/).
 
-* possibility to adjust the volume
+## Contributing
 
-* responsive design
+Contributions are welcome! If you'd like to contribute to this application, please follow these steps:
 
-### Purpose
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature-name`).
+6. Create a new Pull Request.
 
-* to be compatible with [neanes](https://github.com/neanes/neanes)
+## License
 
-### To-Do List
+This application is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
-* to build desktop application for Linux, macOS and  Windows
+## Reporting Issues
 
-* to build mobile application for Android
-
-### Acknowledgements
-
-This software uses some characters from **Neanes.otf** font and the **Scales** names and intervals from [neanes](https://github.com/neanes/neanes)
-
-Thank you for your work on this font and on your application in general, without which this program would not be possible.
-
-#### If you find a bug please open a new issue and send a Bug report.
-
-#### A web version of the app can be found [here](https://kolitsoy.github.io/bza/)
-
-Unfortunately, sometimes the update for the web version may take a few minutes to take effect from to the last commit.
+If you encounter any issues or have suggestions for improvements, please [create an issue](https://github.com/orthodoxprojects/bza/issues) on our issue tracker. We appreciate your feedback!
